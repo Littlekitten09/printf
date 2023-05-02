@@ -1,6 +1,7 @@
+
 #include "main.h"
 
-/********* PRINT CHAR *********/
+/************************* PRINT CHAR *************************/
 
 /**
  * P_char - Prints a char
@@ -19,7 +20,7 @@ int P_char(va_list typ, char buff[],
 
 	return (H_writeC(c, buff, flg, wth, prc, syz));
 }
-/********* PRINT A STRING *********/
+/************************* PRINT A STRING *************************/
 /**
  * P_string - Prints a string
  * @typ: List a of arguments
@@ -74,7 +75,7 @@ int P_string(va_list typ, char buff[],
 
 	return (write(1, str, len));
 }
-/********* PRINT PERCENT SIGN *********/
+/************************* PRINT PERCENT SIGN *************************/
 /**
  * P_percent - Prints a percent sign
  * @typ: Lista of arguments
@@ -97,7 +98,7 @@ int P_percent(va_list typ, char buff[],
 	return (write(1, "%%", 1));
 }
 
-/********* PRINT INT *********/
+/************************* PRINT INT *************************/
 /**
  * P_int - Print int
  * @typ: Lista of arguments
@@ -141,7 +142,7 @@ int P_int(va_list typ, char buff[],
 	return (W_numb(negative, i, buff, flg, wth, prc, syz));
 }
 
-/********* PRINT BINARY *********/
+/************************* PRINT BINARY *************************/
 /**
  * P_binary - Prints an unsigned number
  * @typ: Lista of arguments
@@ -186,3 +187,4 @@ int P_binary(va_list typ, char buff[],
 	}
 	return (count);
 }
+

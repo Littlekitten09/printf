@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -24,3 +25,4 @@ int get_syz(const char *frm, int *i)
 
 	return (syz);
 }
+

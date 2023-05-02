@@ -1,6 +1,6 @@
 #include "main.h"
 
-/********* WRITE HANDLE *********/
+/************************* WRITE HANDLE *************************/
 /**
  * H_writeC - Prints a string
  * @c: char typ.
@@ -44,7 +44,7 @@ int H_writeC(char c, char buff[],
 	return (write(1, &buff[0], 1));
 }
 
-/********* WRITE NUMBER *********/
+/************************* WRITE NUMBER *************************/
 /**
  * W_numb - Prints a string
  * @negative: Lista of arguments
@@ -250,3 +250,4 @@ int W_pointer(char buff[], int ind, int len,
 		buff[--ind] = lherbaC;
 	return (write(1, &buff[ind], B_syz - ind - 1));
 }
+

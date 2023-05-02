@@ -1,6 +1,7 @@
+
 #include "main.h"
 
-/********* PRINT UNSIGNED NUMBER *********/
+/************************* PRINT UNSIGNED NUMBER *************************/
 /**
  * P_unsigned - Prints an unsigned number
  * @typ: List a of arguments
@@ -35,7 +36,7 @@ int P_unsigned(va_list typ, char buff[],
 	return (W_unsgnd(0, i, buff, flg, wth, prc, syz));
 }
 
-/***** PRINT UNSIGNED NUMBER IN OCTAL  ******/
+/************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
 /**
  * P_octal - Prints an unsigned number in octal notation
  * @typ: Lista of arguments
@@ -77,7 +78,7 @@ int P_octal(va_list typ, char buff[],
 	return (W_unsgnd(0, i, buff, flg, wth, prc, syz));
 }
 
-/***** PRINT UNSIGNED NUMBER IN HEXADECIMAL *****/
+/************** PRINT UNSIGNED NUMBER IN HEXADECIMAL **************/
 /**
  * P_hexaDe - Prints an unsigned number in hexadecimal notation
  * @typ: Lista of arguments
@@ -95,7 +96,7 @@ int P_hexaDe(va_list typ, char buff[],
 		flg, 'x', wth, prc, syz));
 }
 
-/***** PRINT UNSIGNED NUMBER IN UPPER HEXADECIMAL ******/
+/************* PRINT UNSIGNED NUMBER IN UPPER HEXADECIMAL **************/
 /**
  * P_hexaUp - Prints an unsigned number in upper hexadecimal notation
  * @typ: Lista of arguments
@@ -113,7 +114,7 @@ int P_hexaUp(va_list typ, char buff[],
 		flg, 'X', wth, prc, syz));
 }
 
-/***** PRINT HEXX NUM IN LOWER OR UPPER *****/
+/************** PRINT HEXX NUM IN LOWER OR UPPER **************/
 /**
  * P_hexa - Prints a hexadecimal number in lower or upper
  * @typ: Lista of arguments
@@ -159,3 +160,4 @@ int P_hexa(va_list typ, char To[], char buff[],
 
 	return (W_unsgnd(0, i, buff, flg, wth, prc, syz));
 }
+

@@ -1,6 +1,7 @@
+
 #include "main.h"
 
-/****** PRINT POINTER ******/
+/****************** PRINT POINTER ******************/
 /**
  * P_p - Prints the value of a pointer variable
  * @typ: List a of arguments
@@ -47,12 +48,12 @@ int P_p(va_list typ, char buff[],
 
 	ind++;
 
-	/return (write(1, &buff[i], B_syz - i - 1));/
+	/*return (write(1, &buff[i], B_syz - i - 1));*/
 	return (W_pointer(buff, ind, len,
 		wth, flg, pd, lherbaC, pd_beg));
 }
 
-/********* PRINT NON PRINTABLE *********/
+/************************* PRINT NON PRINTABLE *************************/
 /**
  * P_n_p - Prints ascii codes in hexa of non printable chars
  * @typ: Lista of arguments
@@ -92,7 +93,7 @@ int P_n_p(va_list typ, char buff[],
 	return (write(1, buff, i + offset));
 }
 
-/********* PRINT REVERSE *********/
+/************************* PRINT REVERSE *************************/
 /**
  * P_reverse - Prints reverse string.
  * @typ: Lista of arguments
@@ -135,7 +136,7 @@ int P_reverse(va_list typ, char buff[],
 	}
 	return (count);
 }
-/********* PRINT A STRING IN ROT13 *********/
+/************************* PRINT A STRING IN ROT13 *************************/
 /**
  * P_Rstring - Print a string in rot13.
  * @typ: Lista of arguments
@@ -186,3 +187,4 @@ int P_Rstring(va_list typ, char buff[],
 	}
 	return (count);
 }
+

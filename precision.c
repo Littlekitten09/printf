@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -39,3 +40,4 @@ int get_prc(const char *frm, int *i, va_list list)
 
 	return (prc);
 }
+

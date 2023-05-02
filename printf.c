@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 void print_buff(char buff[], int *buff_ind);
@@ -64,3 +65,4 @@ void print_buff(char buff[], int *buff_ind)
 
 	*buff_ind = 0;
 }
+

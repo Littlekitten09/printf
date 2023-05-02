@@ -43,7 +43,7 @@ int _printf(const char *frm, ...);
 int handle_P(const char *fmt, int *i,
 va_list list, char buff[], int flg, int wth, int prc, int syz);
 
-/****** FUNCTIONS ******/
+/****************** FUNCTIONS ******************/
 
 /* Funtions to print chars and strings */
 int P_char(va_list typ, char buff[],
@@ -84,11 +84,11 @@ int get_wth(const char *frm, int *i, va_list list);
 int get_prc(const char *frm, int *i, va_list list);
 int get_syz(const char *frm, int *i);
 
-/Function to print string in reverse/
+/*Function to print string in reverse*/
 int P_reverse(va_list typ, char buff[],
 	int flg, int wth, int prc, int syz);
 
-/Function to print a string in rot 13/
+/*Function to print a string in rot 13*/
 int P_Rstring(va_list typ, char buff[],
 	int flg, int wth, int prc, int syz);
 
@@ -106,7 +106,7 @@ int W_unsgnd(int negative, int ind,
 char buff[],
 	int flg, int wth, int prc, int syz);
 
-/****** UTILS ******/
+/****************** UTILS ******************/
 int printable(char);
 int A_hexaCD(char, char[], int);
 int digit(char);
@@ -115,3 +115,4 @@ long int Cnv_syz_nbr(long int num, int syz);
 long int Cnv_syz_uns(unsigned long int num, int syz);
 
 #endif /* MAIN_H */
+

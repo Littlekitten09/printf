@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -84,3 +85,4 @@ long int Cnv_syz_uns(unsigned long int num, int syz)
 
 	return ((unsigned int)num);
 }
+

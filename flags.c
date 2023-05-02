@@ -32,3 +32,4 @@ int get_flg(const char *frm, int *i)
 
 	return (flg);
 }
+
